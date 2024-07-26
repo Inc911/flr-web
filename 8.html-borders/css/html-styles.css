@@ -83,38 +83,50 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-.example-img {
 
-    height: 100px;
-    display: none;
-    /* убирает элемент со страницы */
-}
 
 .example-block {
-    /* width: 500px; */
-    border: 1px solid red;
-    padding: 10px 20px 30px 40px;
-    /* padding: 10%; */
-    margin: 10px 20px 30px 40px;
-    max-width: 1000px;
-    min-width: 800px;
-    height: 5%;
-    overflow: auto;
-    /* display: inline; Превращает блочный тег в строчный */
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    max-width: 500px;
+
+    /* solid, dashed, dotted, */
+    border-left: 10px solid green;
+    border-top: 10px dashed blue;
+    border-right: 10px dotted red;
+    border-bottom: none;
+    border-radius: 50px 0 50px 0;
+    overflow: hidden;
+    /* Скрывает текст, выходящий за границу */
+    box-shadow: 5px 5px 10px 15px pink, inset 5px 5px 10px 15px rgb(17, 207, 207);
+    opacity: 0.5;
+    /* Прозрачность элемента */
+    /* visibility: hidden; */
+    /* Видимость элемента */
+}
+
+.example-block-2 {
+    font-size: 15px;
+    border-left: 10px solid green;
+    border-top: 10px dashed blue;
+    border-right: 10px dotted red;
+    border-bottom: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* Строчный тег ||| Блочные теги не работают*/
 .example-string {
-    border: 1px solid blue;
-    padding: 10px 20px 30px 40px;
-    display: block;
-    /* block, inline, inline-block  */
-    display: inline-block;
-    /* Гибрид строчного и блочного тегов. */
+    font-size: 30px;
+    /* border: 5px solid #000; НЕ КОРРЕКТНА ДЛЯ СТРОЧНЫХ ТЕГОВ */
+    outline: 10px dotted red;
 }
 
 /* Строчный тег ||| Некоторые блочные теги работают */
 .example-img {
-
     height: 100px;
+    border: 5px dotted red;
+    border-radius: 50px;
 }
